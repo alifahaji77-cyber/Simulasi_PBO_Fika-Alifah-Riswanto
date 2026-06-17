@@ -16,12 +16,10 @@ class PendaftaranPrestasi extends Pendaftaran {
     }
 
     // Mengimplementasikan metode abstrak hitungTotalBiaya
-    public function hitungTotalBiaya() {
-        // Misalkan jalur prestasi mendapatkan potongan biaya pendaftaran sebesar 50.000
-        $potongan = 50000;
-        return $this->biayaPendaftaranDasar - $potongan;
+   public function hitungTotalBiaya() {
+    // Mendapatkan potongan/insentif apresiasi prestasi sebesar Rp50.000
+    return $this->biayaPendaftaranDasar - 50000;
     }
-
     // Mengimplementasikan metode abstrak tampilkanInfoJalur
     public function tampilkanInfoJalur() {
         echo "Jalur Pendaftaran: Prestasi<br>";

@@ -17,8 +17,8 @@ class PendaftaranReguler extends Pendaftaran {
 
     // Mengimplementasikan metode abstrak hitungTotalBiaya
     public function hitungTotalBiaya() {
-        // Misalkan jalur reguler tidak ada biaya tambahan, total biaya = biaya dasar
-        return $this->biayaPendaftaranDasar;
+    // Tarif standar murni tanpa biaya tambahan
+    return $this->biayaPendaftaranDasar;
     }
 
     // Mengimplementasikan metode abstrak tampilkanInfoJalur

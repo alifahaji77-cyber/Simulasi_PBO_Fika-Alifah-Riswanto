@@ -17,9 +17,8 @@ class PendaftaranKedinasan extends Pendaftaran {
 
     // Mengimplementasikan metode abstrak hitungTotalBiaya
     public function hitungTotalBiaya() {
-        // Misalkan jalur kedinasan dikenakan biaya administrasi tambahan sebesar 50.000
-        $biayaTambahan = 50000;
-        return $this->biayaPendaftaranDasar + $biayaTambahan;
+    // Dikenakan surcharge administrasi khusus sebesar 25% dari biaya dasar
+    return $this->biayaPendaftaranDasar * 1.25;
     }
 
     // Mengimplementasikan metode abstrak tampilkanInfoJalur
